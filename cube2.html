@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel = "stylesheet" href = "cube.css">
+		<link rel = "stylesheet" href = "cube2.css">
+		<script type = "text/javascript">
+			function loginVerify(){
+				document.getElementsByClassName("cube").style = "display: none;";
+			}
+		</script>
+	</head>
+	<body>
+	<br><br><br>
+		<div class="wrap">
+			<div class="cube">
+				<div class="front">front
+					<center><p class = "welcome">Welcome to the<br>Owl-trageous Trivia Game</p></center>
+					<p id = "un">Username:<br>
+					<input type = "text" name = "username" required></p>
+					<p class = "welcome">Password:<br>
+					<input type = "password" name = "password" required></p>
+					<input type = "button" value = "Login" onclick = "loginVerify();">
+				
+				</div>
+				<div class="back">Jessica Risavi - JavaScript<br>
+								  Johnathan Alexander - HTML/CSS</div>
+				<div class="top">top</div>
+				<div class="bottom">bottom</div>
+				<div class="left"><div id = "produce">Produced By:</div>
+					<img id = "owlImage" src = "images/owl_thumbs_up2.png" height = "150" width = "150" id = "skunk">
+				</div>
+				<div class="right">Antonnette Pullman - Databases<br>
+								   Quinton Hill - APIs
+					
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

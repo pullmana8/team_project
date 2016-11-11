@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel = "stylesheet" href = "cube.css">
+		<script type = "text/javascript">
+			function banana(){
+				var stuff = document.forma.hello.value;
+				alert(stuff);
+				if(stuff == "two"){
+					document.getElementsByClassName("cube").style = "@keyframes spin { from { transform: rotateY(0); }to { transform: rotateY(90deg); }}";
+					document.getElementsByClassName("cube").style = ".cube{animation: spin 20s 1 linear;}";
+				}
+			}
+		</script>
+	</head>
+	<body>
+	<br><br><br>
+		<div class="wrap">
+			<div class="cube">
+				<div class="front">front
+				<p STYLE = "text-align: center; vertical-align: middle; color: white;">Hello, World!</p>
+				<form name = "forma">
+				<input type = "radio" value = "one" name = "hello">One<br>
+				<input type = "radio" value = "two" name = "hello">Two<br>
+				<input type = "button" value = "Click" onclick = "banana();">
+				</form>
+				
+				</div>
+				<div class="back">back</div>
+				<div class="top">top</div>
+				<div class="bottom">bottom</div>
+				<div class="left">left
+					<h1>Correct!</h1>
+					<img src = "images/owl_thumbs_up2.png" height = "75" width = "75" id = "skunk">
+				</div>
+				<div class="right">right
+					<h1>Incorrect!</h1>
+					<img src = "images/skunk2.png" width = "76" height = "74" id = "skunk">
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

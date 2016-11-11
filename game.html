@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+
+<head>
+	<link rel = "stylesheet" href = "styles/main.css">
+	<link rel = "stylesheet" href = "styles/main2.css">
+	<link rel = "stylesheet" href = "cube.css">
+	<link rel = "stylesheet" href = "cube2.css">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<link rel= "stylesheet" href = "styles/bootstrap.css">
+	<meta charset="utf-8">    
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type = "text/javascript">
+		  
+			
+		function startGame(){
+			document.getElementById("options").style = "display: none;";
+			
+			document.getElementById("gameStart").style = "display: block;";
+			document.getElementById("triviaQuestions").style = "display: block;";
+			
+		}
+		function loginVerify(){
+			alert("I am pretending that you have logged in.");
+            document.getElementById("login").style = "display: none;";
+            document.getElementById("options").style = "display: none;";
+            document.getElementById("owlGIF").style = "display: block;";
+            
+            
+            setTimeout(function()
+            {
+                document.getElementById("owlGIF").style = "display: none;";
+                            
+                
+            }, 1500);
+            
+            document.getElementById("options").style="display: block;";    
+            
+        }
+		function countdown() 
+		{
+			seconds = document.getElementById('timer').value;
+            seconds = parseInt(seconds);
+
+            if (seconds == 1) 
+            {
+              temp = document.getElementById('timer');
+              temp.value = "all done";
+              return;
+            }
+
+            seconds--;
+            temp = document.getElementById('timer');
+            temp.value = seconds;
+            timeout = setTimeout(countdown, 1000);
+		} 
+		//countdown();
+	</script>
+</head>
+
+<body>
+	<img id = "owlGIF" src = "animation/owl4.gif"></img>
+	
+	
+		<div class="wrap" id = "login">
+			<div class="cube">
+				<div class="front">front
+					<center><p class = "welcome">Welcome to the<br>Owl-trageous Trivia Game</p></center>
+					<p id = "un">Username:<br>
+					<input STYLE = "color: black;" type = "text" name = "username" required></p>
+					<p class = "welcome">Password:<br>
+					<input STYLE = "color: black;" type = "password" name = "password" required></p>
+					<input type = "button" value = "Login" onclick = "loginVerify();">
+				
+				</div>
+				<div class="back">Jessica Risavi - JavaScript<br>
+								  Johnathan Alexander - HTML/CSS</div>
+				<div class="top">top</div>
+				<div class="bottom">bottom</div>
+				<div class="left"><div id = "produce">Produced By:</div>
+					<img id = "owlImage" src = "images/owl_thumbs_up2.png" height = "150" width = "150" id = "skunk">
+				</div>
+				<div class="right">Antonnette Pullman - Databases<br>
+								   Quinton Hill - APIs
+					
+				</div>
+			</div>
+		</div>
+		
+	
+
+	<div id = "options" class = "options">
+		<center>
+			<h1 id = "ts">
+				<p class = "triangle-border">
+					who-o-o! who-o-o!
+				</p>
+				<span id = "owl">
+					<img src = "animation/owl2.gif" width = "65" height = "85" id = "flip"></img>
+				</span>
+				Game Options
+				<span id = "owl">
+					<img src = "animation/owl2.gif" width = "65" height = "85"></img>
+				</span>
+			</h1>
+		</center>
+		<hr><hr>
+		<br>
+		<div id = "difficulty">
+			<p STYLE = "background-color: #8D693A; color: white;" class = "stuff well">Difficulty</p>
+			
+			<form class = "stuff" name = "difficulty">
+				<input id = "move2" type = "radio" value = "easy" name = "chosenDifficulty">Easy<br>
+				<input id = "move" type = "radio" value = "medium" name = "chosenDifficulty" checked = "checked">Medium<br>
+				<input type = "radio" value = "hard" name = "chosenDifficulty">Hard
+			</form>
+			
+			
+		</div>
+		<input id = "startGame" type = "button" value = "Begin Game" onclick = "startGame();">
+		
+	</div>
+	<!--Start the game here-->
+	<div id = "gameStart">
+		<div id = "timerDisplay">
+			<center><aside>Timer: <input id = "timer" type = "text" name = "timer" value = "15" disabled></aside></center>
+			<input type = 'button' value = 'timer' onclick = "countdown();">
+		</div>
+		<!--<script type = "text/javascript">
+			document.getElementById("timer").value = "1";
+		</script>-->
+	</div>
+	<div id = "triviaQuestions">
+		<p>HOw are you</p>
+	</div>
+	
+</body>
+
+</html>
