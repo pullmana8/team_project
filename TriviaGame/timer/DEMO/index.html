@@ -1,0 +1,29 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>    
+        <meta name="description" content="reverse clock plugin for jQuery.">
+            <meta name="keywords" content="jQuery, plugin, count down">
+                <meta name="viewport" content="width=device-width,initial-scale=1">
+                    <script type="text/javascript" src="../LIB/jquery-2.0.3.js"></script>
+                    <script type="text/javascript" src="../jquery.countdownTimer.js"></script>
+                    <link rel="stylesheet" type="text/css" href="../CSS/jquery.countdownTimer.css" />
+                    </head>
+                    <body>
+                        <div id="main">
+                        <span id="m_timer"></span>
+                             
+                     
+                            <script>
+                                $(function(){
+                                    $('#m_timer').countdowntimer({
+                                        minutes :2,
+                                        size : "lg"
+                                    });
+                                });
+                            </script>
+                                                       
+                        </div>
+                    </body>
+                    </html>
+
