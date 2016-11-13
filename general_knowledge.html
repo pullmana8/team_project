@@ -10,11 +10,10 @@
     <title>Trivia Game</title>
 	<script src="timer/lib/jquery-2.0.3.js"></script>
 	<script src="timer/jquery.countdownTimer.js"></script>
-	<link rel="timer/css/jquery.countdownTimer.css" type="stylesheet">
-	
+
 	<!-- Core Bootstrap -->
-	<link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.css">	
-	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
 	<!-- Font Library -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 
@@ -45,15 +44,15 @@
     <div class="row"><!-- You may notice the images changing in size, so you can change the css file if you desire -->
       <div class="col-md-4">
         <h2>Easy</h2>
-        <button type="button" class="btn btn-default btn-sm" id="login" data-toggle="modal" data-target="#modal1"><img src="img/easy.png" class="img-fluid"></button>
+        <button type="button" class="btn btn-default btn-sm" id="login" data-toggle="modal" data-target="#modal1"><img src="img/easy.jpg" class="img-fluid"></button>
       </div>
       <div class="col-md-4">
         <h2>Medium</h2>
-        <button type="button" class="btn btn-default btn-sm" id="login" data-toggle="modal" data-target="#modal2"><img src="img/easy.png" class="img-fluid"></button>
+        <button type="button" class="btn btn-default btn-sm" id="login" data-toggle="modal" data-target="#modal2"><img src="img/easy.jpg" class="img-fluid"></button>
       </div>
       <div class="col-md-4">
         <h2>Hard</h2>
-        <button type="button" class="btn btn-default btn-sm" id="login" data-toggle="modal" data-target="#modal3"><img src="img/easy.png" class="img-fluid"></button>
+        <button type="button" class="btn btn-default btn-sm" id="login" data-toggle="modal" data-target="#modal3"><img src="img/easy.jpg" class="img-fluid"></button>
       </div>
     </div>
 <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModelLabel3" aria-hidden="true">
@@ -116,13 +115,14 @@
 	</div>
 </div>
 	<!-- JavaScript -->
-	<script src="js/jquery.min"></script>
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
-	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="timer/jquery.countdownTimer.min.js"></script>
+
 	<!-- Custom Stylesheet -->
-	<link rel="stylesheet" href="css/entry.css">
-	
+	<link href="timer/css/jquery.countdownTimer.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/trivia.css">
+
 	<script src="js/easymode.js"></script>
 	<script src="js/mediummode.js"></script>
 </body>
