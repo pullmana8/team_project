@@ -1,4 +1,4 @@
-# team_project
+# Team Project
 Trivia Game
 
 Express, Angular + Material
